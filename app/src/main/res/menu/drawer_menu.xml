@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_frame_data"
+            android:icon="@drawable/ic_frame_data"
+            android:title="Frame Data" />
+        <item
+            android:id="@+id/nav_character_guides"
+            android:icon="@drawable/ic_character_guide"
+            android:title="Character Guides" />
+        <item
+            android:id="@+id/nav_character_communities"
+            android:icon="@drawable/ic_character_communities"
+            android:title="Character Communities" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_submit"
+                android:icon="@drawable/ic_submit"
+                android:title="Submit a Guide" />
+        </menu>
+    </item>
+</menu>
