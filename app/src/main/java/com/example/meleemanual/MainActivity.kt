@@ -22,14 +22,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
         connectViews()
 
-        //Setp Navigation bar view
+        //Setup Navigation bar view
         navigationView.setNavigationItemSelectedListener(this)
         //Setup toggle button for NavBar
         setSupportActionBar(toolbar)
         setupToggleBar()
 
         if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, FrameDataFragment()).commit()
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
             navigationView.setCheckedItem(R.id.nav_home)
         }
     }
@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.getItemId()) {
+            //If Navigation Item is clicked, Go to corresponding fragment
             R.id.nav_home -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
             R.id.nav_frame_data -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, FrameDataFragment()).commit()
             R.id.nav_character_guides -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, CharacterGuideFragment()).commit()

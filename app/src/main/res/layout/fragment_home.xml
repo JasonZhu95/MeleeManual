@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_light">
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Fragment"
+        android:gravity="center"
+        android:text="Recent Sets"
         android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+        android:background="@color/purple_200"/>
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Mang0 vs IBDW"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:autoPlay="false"
+        app:videoId="4CPrPuvML8A" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Amsa vs IBDW"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:videoId="JGvKhWYyFOk"
+        app:autoPlay="false" />
+
+
+</LinearLayout>
