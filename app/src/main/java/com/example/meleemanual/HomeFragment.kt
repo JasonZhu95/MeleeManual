@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
             override fun onReady(youTubePlayer: YouTubePlayer) {
                 val videoId = "4CPrPuvML8A"
                 youTubePlayer.cueVideo(videoId, 0f)
-                
+
             }
         })
 

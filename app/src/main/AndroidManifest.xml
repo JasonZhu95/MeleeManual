@@ -15,7 +15,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.MeleeManual.NoActionBar">
+            android:theme="@style/Theme.MeleeManual.NoActionBar"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
